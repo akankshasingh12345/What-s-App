@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "13436166479",
+    "project_id": "personal-whats-app-8cd1b",
+    "storage_bucket": "personal-whats-app-8cd1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13436166479:android:8973175309399b65ebe53a",
+        "android_client_info": {
+          "package_name": "com.example.whatsapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKnBeCNJFzc1bijk_TgCTrPSEvN97yOn8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
