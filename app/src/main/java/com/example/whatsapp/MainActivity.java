@@ -8,19 +8,20 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Switch;
 import android.widget.Toast;
 
 import com.example.whatsapp.databinding.ActivityMainBinding;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
     FirebaseAuth auth;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+
+    protected <FirebseDatabase> void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

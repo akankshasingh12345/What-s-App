@@ -69,4 +69,7 @@ public class Users {
     public void setLastmessage(String lastmessage) {
         this.lastmessage = lastmessage;
     }
+
+    public void setUserName(String displayName) {
+    }
 }
