@@ -19,6 +19,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -55,11 +56,11 @@ public class SignInActivity extends AppCompatActivity {
         progressDialog.setTitle("Login");
         progressDialog.setMessage("Login to your account");
 
-//        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-//                .requestIdToken(getString(R.string.default_web_client_id))
-//                .requestEmail()
-//                .build();
-//        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
+       GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken("13436166479-2innrfpuu8euf11082aon2kkf679oh2o.apps.googleusercontent.com")
+                .requestEmail()
+               .build();
+     mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
 
         binding.btnSignIn.setOnClickListener(new View.OnClickListener() {
